@@ -1,4 +1,4 @@
 <?php
-    echo "hi, I'm Alice";
-    echo " São Paulo tá na semifinal"
+    echo "hi, I'm Alice"."<br>";
+    echo " São Paulo tá na semifinal";
 ?>
