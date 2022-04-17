@@ -18,7 +18,7 @@ if(array_key_exists($loginDig, $senhaDig))
     }
 }
 else {
-    echo "Usuário não cadastrado"
+    echo "Usuário não cadastrado";
 }
 
 ?>
