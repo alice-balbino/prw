@@ -2,8 +2,7 @@
     $num1;
     $num2;
     $value;
-    $i;
-/*
+    
     if($value ==0){
         $soma = $num1 + $num2;
         echo $soma;
@@ -20,13 +19,7 @@
         $mul = $num1 * $num2;
         echo $mul;
     }
-*/
 
-for (i = 1; i == 0; i++)
-  {
-    $soma = $num1 + $num2;
-        echo $soma;
-  }
 
 
 ?>
