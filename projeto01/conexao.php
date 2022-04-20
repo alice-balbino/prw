@@ -4,7 +4,7 @@
     $username = "root";
     $password =  "";
     $database = "projeto01";
-    $con = mysqli_connect($hostname, $port, $username, $password, $database);
+    $con = mysqli_connect($hostname, $username, $password, $database, $port);
     
     if (mysqli_connect_errno()){
         printf("Erro ao conectar ao banco de dados: %s\n", mysqli_connect_error());
