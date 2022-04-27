@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(70, 130, 182);
+}
+fieldset{
+    margin: auto;
+    width: 500px;
+}
+h2{
+    text-align: center;
+}
+div#botao{
+    text-align: end;
+}
+div#centro{
+    text-align: center;
+}

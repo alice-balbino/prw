@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>cadastro</title>
 </head>
 <body>
     <h2>Cadastro de Cliente - IFSP</h2>
     <form method="POST" action="cadastro_usuario.php">
-            <div>
+        <fieldset>
+            <div id="centro">
                 <label for="nome_usuario">Nome:</label>
-                <input name="nome_usuario" type="text" id="nome_usuario"><br>
+                <input name="nome_usuario" type="text" id="nome_usuario"><br></br>
             </div>
-            <div>
+            <div id="centro">
                 <label for="email_usuario">E-mail:</label>
-                <input name="email_usuario" type="text" id="email_usuario"><br>
+                <input name="email_usuario" type="text" id="email_usuario"><br></br>
+                </div>
             </div>
-            <div>
+            <div id="centro">
                 <label for="fone_usuario">Telefone:</label>
                 <input name="fone_usuario" type="text" id="fone_usuario">
             </div>
             <br>
-            <div>            
+            <div id="botao">            
                 <button  type="submit">Enviar</button>
             </div>
+            </fieldset>
     </form>    
 </body>
 </html>
