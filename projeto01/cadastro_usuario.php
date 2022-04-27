@@ -8,7 +8,7 @@
     echo "<p>email: ".$email_usuario;
     echo "<p>telefone: ".$fone_usuario;
 
-    $sql = "INSERT INTO usuario ('nome_usuario', 'email_usuario', 'fone_usuario')
+    $sql = "INSERT INTO usuario (nome_usuario, email_usuario, fone_usuario)
             VALUES ('".$nome_usuario."','".$email_usuario."','".$fone_usuario."')";
 
     $result = mysqli_query($con, $sql);
