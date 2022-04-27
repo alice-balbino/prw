@@ -3,8 +3,6 @@
         $sql = 'SELECT * FROM usuario';
         //result: retorna todos os dados da consulta
         $result = mysqli_query($con, $sql);
-        $row = mysqli_fetch_array($result);
-
         //print_r($row); -> era pra ver se estava funcionando
 ?>
 
@@ -24,6 +22,17 @@
                 <th>E-mail</th>
                 <th>Telefone</th>
             </tr>
+
+            <?php
+                while($row = mysqli_fetch_array($result)){
+                    echo "<tr>";
+                    echo "<th>". $row['id_usuario'] ."</th>";
+                    echo "<th>". $row['nome_usuario'] ."</th>";
+                    echo "<th>". $row['email_usuario'] ."</th>";
+                    echo "<th>". $row['fone_usuario'] ."</th>";
+                    echo "</tr>";
+                }
+            ?>
 
         </table>
 </body>
