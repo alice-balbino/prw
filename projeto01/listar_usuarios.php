@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1>Listagen de Usuários</h1>
-        <table align="center" border="1">
+        <table align="center" border="1" width=500>
             <!-- tr>th*4 --> 
             <tr>
                 <th>Código</th>
