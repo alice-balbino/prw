@@ -1,3 +1,12 @@
+<?php
+    include('conexao.php');
+    $id_usuario = $_GET['id_usuario'];
+    $sql = 'SELECT * FROM usuario where id_usuario ='.$id_usuario;
+    $result = mysqli_query($con, $sql);
+    $row = mysqli_fetch_array($result);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +17,21 @@
     <title>cadastro</title>
 </head>
 <body>
-    <h2>Cadastro de Cliente - IFSP</h2>
+<h2>Alteração de Usuário - IFSP</h2>
     <form method="POST" action="cadastro_usuario.php">
         <fieldset>
             <div id="centro">
                 <label for="nome_usuario">Nome:</label>
-                <input name="nome_usuario" type="text" id="nome_usuario" placeholder="Digite o Nome"><br></br>
+                <input name="nome_usuario" type="text" id="nome_usuario" value="<?php echo $row['nome_usuario'] ?>" placeholder="Digite o nome"><br></br>
             </div>
             <div id="centro">
                 <label for="email_usuario">E-mail:</label>
-                <input name="email_usuario" type="text" id="email_usuario" placeholder="Digite o E-mail"><br></br>
+                <input name="email_usuario" type="text" id="email_usuario" value="<?php echo $row['email_usuario'] ?>" placeholder="Digite o e-mail"><br></br>
                 </div>
             </div>
             <div id="centro">
                 <label for="fone_usuario">Telefone:</label>
-                <input name="fone_usuario" type="text" id="fone_usuario" placeholder="Digite o Telefone">
+                <input name="fone_usuario" type="text" id="fone_usuario" value="<?php echo $row['fone_usuario'] ?>" placeholder="Digite o Telefone">
             </div>
             <br>
             <div id="botao">            
