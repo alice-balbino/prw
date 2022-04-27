@@ -11,9 +11,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Listagen de Usuários</title>
+    <link rel="stylesheet" href="estilo_usuario.css">
 </head>
 <body>
-    <h1>Listagen de Usuários</h1>
+    <h1>Listagem de Usuários</h1>
         <table align="center" border="1" width=500>
             <!-- tr>th*4 --> 
             <tr>
