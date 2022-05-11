@@ -1,9 +1,9 @@
 <?php
     include('conexao.php');
     $id_usuario = $_POST['id_usuario'];
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
+    $nome = $_POST['nome_usuario'];
+    $email = $_POST['email_usuario'];
+    $telefone = $_POST['fone_usuario'];
     
     echo "<h1> Alteração de dados </h1>";
     echo "<p> Nome Usuário: " . $nome . "<p>";
