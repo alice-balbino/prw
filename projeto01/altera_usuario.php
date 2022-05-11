@@ -18,7 +18,7 @@
 </head>
 <body>
 <h2>Alteração de Usuário - IFSP</h2>
-    <form method="POST" action="cadastro_usuario.php">
+    <form method="POST" action="cadastro_usuario_exe.php">
         <fieldset>
             <div id="centro">
                 <label for="nome_usuario">Nome:</label>
