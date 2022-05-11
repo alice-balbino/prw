@@ -16,5 +16,5 @@
         echo "<br>"."Dados inseridos com sucesso";
     else
     echo "Erro ao inserir banco de dados: ".mysqli_error($con);
-
+//plç
 ?>
