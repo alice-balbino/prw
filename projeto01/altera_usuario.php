@@ -39,7 +39,7 @@
                 <!--<a href='index.php'>Voltar</a>-->
             </div>
             <input name="id_usuario" type="hidden" value="<?php echo $row['$id_usuario']?>">
-            </fieldset>
+        </fieldset>
     </form>    
 </body>
 </html>
