@@ -28,7 +28,7 @@
                 while($row = mysqli_fetch_array($result)){
                     echo "<tr>";
                     echo "<th>". $row['id_usuario'] ."</th>";
-                    echo "<th>". $row['nome_usuario'] ."</th>";
+                    echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>'".$row['nome_usuario'] ."</a></td>";
                     echo "<th>". $row['email_usuario'] ."</th>";
                     echo "<th>". $row['fone_usuario'] ."</th>";
                     echo "</tr>";
