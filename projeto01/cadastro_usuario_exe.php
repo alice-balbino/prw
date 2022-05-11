@@ -12,7 +12,7 @@
 	$sql = "UPDATE usuario SET
             nome_usuario='".$nome."',
             email_usuario='".$email."',
-            telefone_usuario='".$telefone."'
+            fone_usuario='".$telefone."'
           WHERE id_usuario=".$id_usuario;
 	    
 	$result = mysqli_query($con, $sql);
