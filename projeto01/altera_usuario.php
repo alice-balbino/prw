@@ -37,6 +37,7 @@
             <div id="botao">            
                 <button  type="submit">Enviar</button>
             </div>
+            <input name="id_usuario" type="hidden" value="<?php echo $row['$id_usuario']?>">
             </fieldset>
     </form>    
 </body>
