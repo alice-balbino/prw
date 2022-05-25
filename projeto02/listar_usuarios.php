@@ -23,7 +23,7 @@
 <body>
 
     <h1 align="center">Listagem de Usuários</h1><br>
-    <table align="center" border="1" width="700">
+    <table align="center" border="1" width="1000">
         <!-- tr>th*4 -->
         <tr>
             <th>Código</th>
