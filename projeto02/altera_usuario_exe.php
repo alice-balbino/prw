@@ -24,8 +24,10 @@
   $telefone = $_POST['telefone'];
       
   echo "<h1> Alteração de dados </h1>";
-  echo "<p> Nome Usuário: " . $nome . "<p>";    
-  if(isset($fotoNome)){
+  echo "<p> Nome Usuário: " . $nome . "<p>";   
+  
+  //ver se a pessoa alterou foto nova
+  if(strlen($fotoNome)){
     $sql = "UPDATE usuario SET
               nome_usuario='".$nome."',
               email_usuario='".$email."',
