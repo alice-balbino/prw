@@ -35,6 +35,7 @@
                     <label for="telefone">Telefone:</label>
                     <input type="text" id="telefone" name="telefone" value="<?php echo $row['telefone_usuario']?>" placeholder="Digite o Telefone">
                 </div>
+                <!-- input para mudar foto -->
                 <div class="form-item">
                     <input type="file" id="foto" name="foto" accept="image/*" />
                 </div>                        
