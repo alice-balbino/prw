@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(200, 248, 224);
+}
 * {
     box-sizing: border-box;
     
