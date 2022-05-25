@@ -3,6 +3,7 @@
 
     // Upload da foto     
     $fotoNome = $_FILES['foto']['name'];
+    //esse comando fará a foto salvar na pasta upload
     $target_dir = "upload/";
     $target_file = $target_dir . basename($_FILES["foto"]["name"]);
     // Select file type
