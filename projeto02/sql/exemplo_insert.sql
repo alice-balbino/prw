@@ -1,6 +1,6 @@
-USE projeto01;
+USE projeto02;
 
-INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario)
-VALUES ('Murilo Sauro', 'murilo@mail.com', '9090-7070');
+$sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario, foto_blob, foto_nome)
+VALUES ('".$nome."','".$email."','".$telefone."','".$fotoBlob."','".$fotoNome."' )";
 
 SELECT * FROM usuario;

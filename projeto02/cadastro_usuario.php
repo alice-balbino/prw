@@ -16,6 +16,7 @@
         // Upload file
         if(move_uploaded_file($_FILES['foto']['tmp_name'],$target_dir.$fotoNome)){
             $fotoBlob = addslashes(file_get_contents($target_dir.$fotoNome));
+            //fotoBlob -> foto em binário
         }
     }
 
