@@ -30,7 +30,7 @@
             </div>
             <div id="centro">
                 <label for="endereco">Endereço:</label>
-                <input name="endereco" type="text" id="endereco" value="<?php echo $row['enderco']?>"><br></br>
+                <input name="endereco" type="text" id="endereco" value="<?php echo $row['endereco']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="bairro">Bairro:</label>
@@ -46,7 +46,7 @@
             </div>
             <div id="centro">
                 <label for="telefone">Telefone:</label>
-                <input name="telefone" type="text" id="telefone" value="<?php echo $row['teleone']?>"><br></br>
+                <input name="telefone" type="text" id="telefone" value="<?php echo $row['telefone']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="celular">Celular:</label>
