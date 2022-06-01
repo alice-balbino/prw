@@ -1,6 +1,6 @@
-create database lista6;
+create database agenda;
 
-use lista6;
+use agenda;
 
 create table agenda (
 	id_agenda int  not null auto_increment,
