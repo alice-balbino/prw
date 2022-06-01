@@ -19,6 +19,7 @@
             <!-- tr>th*4 --> 
             <tr>
                 <th>Código</th>
+                <th>Foto</th>
                 <th>Nome</th>
                 <th>Apelido</th>
                 <th>Endereço</th>
@@ -35,6 +36,7 @@
                 while($row = mysqli_fetch_array($result)){
                     echo "<tr>";
                     echo "<th>". $row['id_agenda'] ."</th>";
+                    echo "<td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/></td>";
                     echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>".$row['nome'] ."</a></td>";
                     echo "<th>". $row['apelido'] ."</th>";
                     echo "<th>". $row['endereco'] ."</th>";
