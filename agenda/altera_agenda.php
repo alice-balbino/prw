@@ -59,7 +59,7 @@
                 </div>
             </div>
             <!-- input para mudar foto -->
-            <div class="form-item">
+            <div id="centro">
                     <input type="file" id="foto" name="foto" accept="image/*" />
                 </div> 
             <br>

@@ -3,7 +3,7 @@
     $port = 3307;
     $username = "root";
     $password =  "";
-    $database = "lista6";
+    $database = "agenda";
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
     
     if (mysqli_connect_errno()){
