@@ -18,6 +18,7 @@
 </head>
 <body>
 <h2>Alteração de Contato</h2>
+<?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
     <form method="POST" action="altera_agenda_exe.php">
         <fieldset>
         <div id="centro">
