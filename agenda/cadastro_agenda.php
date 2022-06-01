@@ -1,5 +1,25 @@
 <?php
     include('conexao.php');
+
+    //upload da foto 
+    $fotoNome = $_FILES['foto']['name'];
+    //salvar foto
+    $target_dir = "upload/";
+    $target_file = $target_dir . basename($_FILES["foto"]["name"]);
+     // Selecionar file type
+     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+     // validar file extensions
+     $extensions_arr = array("jpg","jpeg","png","gif");
+
+    // Checar extension
+    if( in_array($imageFileType,$extensions_arr) ){        
+        // Upload file
+        if(move_uploaded_file($_FILES['foto']['tmp_name'],$target_dir.$fotoNome)){
+            $fotoBlob = addslashes(file_get_contents($target_dir.$fotoNome));
+            //fotoBlob -> foto em binário
+        }
+    }
+
    $nome = $_POST['nome'];
    $apelido = $_POST['apelido'];
    $endereco= $_POST['endereco'];

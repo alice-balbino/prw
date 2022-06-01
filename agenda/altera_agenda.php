@@ -57,6 +57,10 @@
                 <input name="email" type="text" id="email" value="<?php echo $row['email']?>"><br></br>
                 </div>
             </div>
+            <!-- input para mudar foto -->
+            <div class="form-item">
+                    <input type="file" id="foto" name="foto" accept="image/*" />
+                </div> 
             <br>
             <div id="botao">            
                 <button  type="submit">Enviar</button>
