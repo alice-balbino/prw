@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
-    $id_usuario = $_GET['id_agenda'];
-    $sql = 'SELECT * FROM usuario where id_agenda ='.$id_agenda;
+    $id_agenda = $_GET['id_agenda'];
+    $sql = 'SELECT * FROM agenda where id_agenda ='.$id_agenda;
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
 
@@ -18,43 +18,43 @@
 </head>
 <body>
 <h2>Alteração de Contato</h2>
-    <form method="POST" action="cadastro_agenda_exe.php">
+    <form method="POST" action="altera_agenda_exe.php">
         <fieldset>
         <div id="centro">
                 <label for="nome">Nome:</label>
-                <input name="nome" type="text" id="nome" placeholder="Digite o Nome"><br></br>
+                <input name="nome" type="text" id="nome" value="<?php echo $row['nome']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="apelido">Apelido:</label>
-                <input name="apelido" type="text" id="apelido" placeholder="Digite o Apelido"><br></br>
+                <input name="apelido" type="text" id="apelido" value="<?php echo $row['apelido']?>" ><br></br>
             </div>
             <div id="centro">
                 <label for="endereco">Endereço:</label>
-                <input name="endereco" type="text" id="endereco" placeholder="Digite o Endereço"><br></br>
+                <input name="endereco" type="text" id="endereco" value="<?php echo $row['enderco']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="bairro">Bairro:</label>
-                <input name="bairro" type="text" id="bairro" placeholder="Digite o Bairro"><br></br>
+                <input name="bairro" type="text" id="bairro" value="<?php echo $row['bairro']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="cidade">Cidade:</label>
-                <input name="cidade" type="text" id="cidade" placeholder="Digite a Cidade"><br></br>
+                <input name="cidade" type="text" id="cidade" value="<?php echo $row['cidade']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="estado">Estado:</label>
-                <input name="estado" type="text" id="estado" placeholder="Digite o Estado"><br></br>
+                <input name="estado" type="text" id="estado" value="<?php echo $row['estado']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="telefone">Telefone:</label>
-                <input name="telefone" type="text" id="telefone" placeholder="Digite o Telefone"><br></br>
+                <input name="telefone" type="text" id="telefone" value="<?php echo $row['teleone']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="celular">Celular:</label>
-                <input name="celular" type="text" id="celular" placeholder="Digite o Celular"><br></br>
+                <input name="celular" type="text" id="celular" value="<?php echo $row['celular']?>"><br></br>
             </div>
             <div id="centro">
                 <label for="email">E-mail:</label>
-                <input name="email" type="text" id="email" placeholder="Digite o E-mail"><br></br>
+                <input name="email" type="text" id="email" value="<?php echo $row['email']?>"><br></br>
                 </div>
             </div>
             <br>

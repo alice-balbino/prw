@@ -10,6 +10,7 @@
     $telefone = $_POST['telefone'];
     $celular= $_POST['celular'];
     $email = $_POST['email'];
+    $dt_cadastro=date("Y-m-d");
     
     
     echo "<h1> Alteração de dados </h1>";
@@ -23,10 +24,10 @@
             bairro='".$bairro."',
             cidade='".$cidade."',
             estado='".$estado."',
-            telefone='".$telefone."'
+            telefone='".$telefone."',
             celular='".$celular."',
             email='".$email."',
-            
+            dt_cadastro='".$dt_cadastro."'
           WHERE id_agenda=".$id_agenda;
 	    
 	$result = mysqli_query($con, $sql);
