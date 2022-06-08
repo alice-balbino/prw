@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1  align="center">Listagem de Contatos</h1>
-        <table align="center" border="1" width=1000>
+        <table align="center" border="1" width=1500>
             <!-- tr>th*4 --> 
             <tr>
                 <th>Código</th>
