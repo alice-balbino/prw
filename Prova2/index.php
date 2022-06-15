@@ -14,7 +14,7 @@
         <ul>
             <li><a href="cadastro_fluxo_caixa.html">Cadastro Fluxo de Caixa</li>
             <li><a href="listar_fluxo_caixa.php">Listagem de Fluxo de Caixa</li>
-            <li><a href="listar_agenda.php">Consulta Saldo de Caixa</li>
+            <li><a href="consulta_fluxo_caixa.html">Consulta Saldo de Caixa</li>
         </ul>
     </div>
 </body>

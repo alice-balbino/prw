@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_cadastro.css">
+    <title>cadastro</title>
+</head>
+<body>
+    <h2>Consulta Fluxo de Caixa</h2>
+    <form method="POST" action="consulta_fluxo_caixa.php" enctype='multipart/form-data'>
+        <fieldset>
+            <div id="centro">
+                <label for="tipo">Tipo de Consulta:</label><br></br>
+                <input type="radio" name="tipo" id="tipo" value="total">Saldo Total</label>
+                <input type="radio" name="tipo" id="tipo" value="saida">Total Saídas</label>
+                <input type="radio" name="tipo" id="tipo" value="entrada">Total Entradas</label><br></br>
+            </div>
+            <br>
+            <div id="botao">            
+                <button  type="submit">Enviar</button>
+            </div>
+            </fieldset>
+    </form>    
+</body>
+</html>

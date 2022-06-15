@@ -1,10 +1,10 @@
 <?php
     include('conexao.php');
-    $id_fluxo_caixa = $_GET['id'];
-    $sql = 'SELECT * FROM Prova2 where id ='.$id;
+    $id = $_GET['id'];
+    $sql = 'SELECT * FROM fluxo_caixa where id='.$id;
+    //echo $sql;
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
-
 ?>
 
 

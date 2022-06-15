@@ -14,7 +14,7 @@
               tipo='".$tipo."',
               data='".$data."',
               valor='".$valor."',
-              historio='".$historico."',
+              historico='".$historico."',
               cheque='".$cheque."'
         WHERE id=".$id;
 
