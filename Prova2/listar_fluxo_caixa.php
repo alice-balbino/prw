@@ -30,7 +30,7 @@
             <?php
                 while($row = mysqli_fetch_array($result)){
                     echo "<tr>";
-                    echo "<th>". $row['id'] ."</th>";
+                    echo "<th><a href='altera_fluxo_caixa.php?id_usuario=".$row['id']."'>". $row['id'] ."</th>";
                     echo "<th>". $row['data'] ."</th>";
                     echo "<th>". $row['tipo'] ."</th>";
                     echo "<th>". $row['valor'] ."</th>";

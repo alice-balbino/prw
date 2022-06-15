@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
-    $id_fluxo_caixa = $_GET['id_fluxo_caixa'];
-    $sql = 'SELECT * FROM Prova2 where id_fluxo_caixa ='.$id_fluxo_caixa;
+    $id_fluxo_caixa = $_GET['id'];
+    $sql = 'SELECT * FROM Prova2 where id ='.$id;
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
 
@@ -45,6 +45,9 @@
                     <option value="nao">Não</option>
                 </select>
             </div>
+
+               <input name='id' type='hidden' value='<?php echo $row['id']?>'>
+
             <br>
             <div id="botao">            
                 <button  type="submit">Enviar</button>
