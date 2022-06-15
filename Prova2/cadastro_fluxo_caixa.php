@@ -23,3 +23,4 @@
     echo "Erro ao inserir banco de dados: ".mysqli_error($con);
 //plç
 ?>
+<br><br><a href='cadastro_fluxo_caixa.html'> Voltar</a>

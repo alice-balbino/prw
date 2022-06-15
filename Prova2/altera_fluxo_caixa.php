@@ -18,7 +18,7 @@
     <title>cadastro</title>
 </head>
 <body>
-    <h2>Cadastro de Fluxo de Caixa</h2>
+    <h2>Altera: Cadastro de Fluxo de Caixa</h2>
     <form method="POST" action="altera_fluxo_caixa_exe.php" enctype='multipart/form-data'>
         <fieldset>
             <div id="centro">
@@ -52,6 +52,7 @@
             <div id="botao">            
                 <button  type="submit">Enviar</button>
             </div>
+            <a href='listar_fluxo_caixa.php'> Voltar</a>
             </fieldset>
     </form>    
 </body>
