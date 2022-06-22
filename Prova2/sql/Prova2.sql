@@ -3,7 +3,7 @@ use Prova2;
 
 DROP TABLE IF EXISTS fluxo_caixa;
 CREATE TABLE fluxo_caixa(
-	id_caixa INTEGER NOT NULL AUTO_INCREMENT,
+	id INTEGER NOT NULL AUTO_INCREMENT,
     data DATE NOT NULL,
     tipo VARCHAR(10) NOT NULL,
     valor DECIMAL (10,2) NOT NULL,
