@@ -13,14 +13,14 @@
     echo "<p>Historico: ".$historico;
     echo "<p>Cheque: ".$cheque;
 
-    $sql = "INSERT INTO fluxo_caixa (date, tipo, valor, historico, cheque)
+    $sql = "INSERT INTO fluxo_caixa (data, tipo, valor, historico, cheque)
             VALUES ('".$data."','".$tipo."','".$valor."','".$historico."','".$cheque."')";
 
     $result = mysqli_query($con, $sql);
     if($result)
         echo "<br>"."Dados inseridos com sucesso";
     else
-    echo "Erro ao inserir banco de dados: ".mysqli_error($con);
+    echo "<br>"."Erro ao inserir banco de dados: ".mysqli_error($con);
 //plç
 ?>
 <br><br><a href='cadastro_fluxo_caixa.html'> Voltar</a>

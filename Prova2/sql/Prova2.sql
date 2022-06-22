@@ -1,5 +1,5 @@
-create database Prova2;
-use Prova2;
+create database prova2fluxo_caixa;
+use prova2;
 
 DROP TABLE IF EXISTS fluxo_caixa;
 CREATE TABLE fluxo_caixa(
