@@ -13,7 +13,7 @@
     echo "<p>Historico: ".$historico;
     echo "<p>Cheque: ".$cheque;
 
-    $sql = "INSERT INTO fluxo_caixa (data, tipo, valor, historico, cheque)
+    $sql = "INSERT INTO fluxo_caixa (date, tipo, valor, historico, cheque)
             VALUES ('".$data."','".$tipo."','".$valor."','".$historico."','".$cheque."')";
 
     $result = mysqli_query($con, $sql);
