@@ -1,4 +1,4 @@
-create database prova2fluxo_caixa;
+create database prova2;
 use prova2;
 
 DROP TABLE IF EXISTS fluxo_caixa;
